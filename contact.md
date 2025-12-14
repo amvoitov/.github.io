@@ -1,6 +1,12 @@
 ---
 title: "Контакты"
 permalink: /contact/
+id: contact
+
+email: you@mail.com
+telegram: yourname
+hh: ВСТАВЬ_ССЫЛКУ
+github: https://github.com/amvoitov
 ---
 
 # Контакты
