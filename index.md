@@ -9,3 +9,4 @@ title: "Главная"
 <a class="btn" href="/about">Обо мне</a>
 <a class="btn" href="/contact">Контакты</a>
 <a class="btn" href="/assets/files/portfolio.pdf">PDF-портфолио</a>
+
