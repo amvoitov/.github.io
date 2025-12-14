@@ -11,7 +11,6 @@ permalink: /
 
 <div class="d-flex flex-wrap gap-2 mb-3">
   <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Смотреть кейсы</a>
-  <a class="btn btn-outline-secondary" href="{{ '/assets/files/portfolio.pdf' | relative_url }}">Скачать PDF</a>
 </div>
 
 <div class="alert alert-light border mb-3">
