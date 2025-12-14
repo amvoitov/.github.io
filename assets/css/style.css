@@ -84,3 +84,21 @@ a:hover { text-decoration: none; }
   background: #fff;
   margin: 12px 0;
 }
+/* Hide GitHub profile link block in header */
+header .view { display: none !important; }
+
+/* Hide footer "Hosted on GitHub Pages — Theme by ..." */
+footer { display: none !important; }
+
+/* Fix ugly purple underlined header link */
+header h1 a,
+header h1 a:visited {
+  color: #111827 !important;
+  text-decoration: none !important;
+}
+
+header h1 a:hover { text-decoration: none !important; }
+
+/* Normalize links (avoid purple visited look in content too) */
+a, a:visited { color: #0969da; }
+a:hover { text-decoration: none; }
