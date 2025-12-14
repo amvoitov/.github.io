@@ -23,4 +23,12 @@ permalink: /projects/
     <span class="tag">качество</span><span class="tag">требования</span><span class="tag">интеграции</span>
   </a>
 
+  <a class="card" href="{{ '/projects/case_3/' | relative_url }}">
+  <div class="card-title">Кейс 3: Весовая система бункера перегрузчика</div>
+  <div class="card-meta">PM/PO/аналитик • embedded + Android + портал • телеметрия</div>
+  <p class="card-text">Учёт урожая и расчёт оплаты: Bluetooth-данные, офлайн-хранение, синхронизация в портал. Эффект: ↓ споры −80%, ↓ потери/воровство −70%.</p>
+  <span class="tag">MVP→серия</span><span class="tag">качество данных</span><span class="tag">телеметрия</span>
+</a>
+
+
 </div>
