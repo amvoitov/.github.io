@@ -1,5 +1,6 @@
 ---
 title: "Проекты"
+permalink: /projects/
 ---
 
 

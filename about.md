@@ -1,5 +1,6 @@
 ---
 title: "Обо мне"
+permalink: /about/
 ---
 
 
