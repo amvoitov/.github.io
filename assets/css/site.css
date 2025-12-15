@@ -180,3 +180,35 @@ body{
   line-height: 1.25;
   font-weight: 600;
 }
+/* ===== App layout: header + scrollable content + footer ===== */
+html, body { height: 100%; }
+
+body.app-layout{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* прокрутка будет только в main */
+}
+
+body.app-layout .app-header,
+body.app-layout .app-footer{
+  flex: 0 0 auto;
+}
+
+body.app-layout .app-main{
+  flex: 1 1 auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* чтобы шапка/футер визуально отделялись */
+body.app-layout .app-header{
+  background: var(--bs-body-bg);
+  z-index: 1030;
+}
+
+body.app-layout .app-footer{
+  background: var(--bs-body-bg);
+  border-top: 1px solid var(--bs-border-color);
+  padding-bottom: calc(0.25rem + env(safe-area-inset-bottom));
+}

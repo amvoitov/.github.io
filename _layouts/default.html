@@ -3,33 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ site.description | escape }}">
-
-  <!-- Bootstrap (local) -->
-  <link rel="stylesheet" href="{{ '/assets/vendor/bootstrap_5_3_8/css/bootstrap.min.css' | relative_url }}">
-
-  <!-- Your site styles (after Bootstrap) -->
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-
-  <!-- Any extra tags/scripts/icons you keep here -->
   {% include head-custom.html %}
 </head>
 
-<body class="bg-body-tertiary d-flex flex-column min-vh-100">
+<body class="bg-body-tertiary app-layout">
+  <div class="app-header">
+    {% include nav.html %}
+  </div>
 
-  {% include nav.html %}
-
-  <main id="main" class="flex-grow-1 py-4">
-    <div class="container container-portfolio px-3 px-lg-4">
+  <main class="app-main py-4">
+    <div class="container-xxl px-3">
       <div class="page-shell">
         {{ content }}
       </div>
     </div>
   </main>
 
-  {% include footer.html %}
+  <div class="app-footer">
+    {% include footer.html %}
+  </div>
 
   <script src="{{ '/assets/vendor/bootstrap_5_3_8/js/bootstrap.bundle.min.js' | relative_url }}"></script>
 </body>
