@@ -10,9 +10,9 @@ permalink: /artifacts/case_1/artifact_2/
 
 <div class="card shadow-sm border-0">
   <div class="card-body p-4">
-    <h1 class="h3 mb-2">North Star и KPI-дерево</h1>
+    <h1 class="h3 mb-2">NSM и KPI-дерево</h1>
     <p class="text-secondary mb-0">
-      Метрики продукта: North Star Metric и драйверы качества/доставки/безопасности/принятия.
+      Метрики продукта: NSM и драйверы качества/доставки/безопасности/принятия.
     </p>
   </div>
 </div>
