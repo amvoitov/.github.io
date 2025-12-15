@@ -7,7 +7,7 @@ case_title_short: "Весовая ЛИЛИАНИ"
 case_tags: ["Embedded", "Android", "Web"]
 case_short: "Блок обработки сигнала тензодатчика + Android (отображение/фильтрация/офлайн) + портал аналитики/телеметрии."
 case_role: "PM / PO / аналитик / техлид / архитектор"
-case_period: "10.2021 → 11.2022+"
+case_period: "10.2021 → 02.2025"
 case_team: "7+ участников"
 case_effect: "+20% продаж БП"
 case_artifacts_url: /artifacts/case_1/
