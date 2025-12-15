@@ -2,7 +2,7 @@ title: "Войтов Андрей Михайлович"
 description: "Руководитель проекта / продукта"
 
 url: "https://amvoitov.github.io"
-baseurl: "/amvoitoiv.github.io"
+baseurl: ""
 
 defaults:
   - scope:
