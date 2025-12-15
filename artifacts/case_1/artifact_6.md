@@ -5,10 +5,6 @@ permalink: /artifacts/case_1/artifact_6/
 
 # Артефакт 6 — Top-риски и меры
 
-<p class="text-muted mb-3">
-Короткий реестр “что может пойти не так” + меры и мониторинг. Формат — портфолио PM/PO (коротко, по делу).
-</p>
-
 <div class="row g-3 mb-4">
   <div class="col-12 col-lg-4">
     <div class="card h-100 border">

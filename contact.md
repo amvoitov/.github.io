@@ -20,10 +20,6 @@ hh_url: "https://rostov.hh.ru/resume/b4d7a9aaff0ba1a6c80039ed1f656c626b436b"
         <div class="mb-2"><b>Email:</b> <a href="mailto:{{ page.email }}">{{ page.email }}</a></div>
         <div class="mb-2"><b>Telegram:</b> <a href="https://t.me/{{ page.telegram }}">@{{ page.telegram }}</a></div>
         <div class="mb-3"><b>Телефон:</b> <a href="tel:{{ page.phone | replace:' ', '' }}">{{ page.phone }}</a></div>
-
-        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#msgModal">
-          Написать сообщение
-        </button>
       </div>
     </div>
   </div>
@@ -33,11 +29,6 @@ hh_url: "https://rostov.hh.ru/resume/b4d7a9aaff0ba1a6c80039ed1f656c626b436b"
       <div class="card-body p-4">
         <div class="fw-semibold mb-2">Профили</div>
         <div class="mb-2"><b>HH:</b> <a href="{{ page.hh }}">Резюме</a></div>
-
-        <div class="text-muted small mt-3">
-          Форма ниже не отправляет данные на сервер (GitHub Pages — статичный хостинг).
-          Кнопка откроет письмо в почтовом клиенте.
-        </div>
       </div>
     </div>
   </div>
@@ -50,26 +41,6 @@ hh_url: "https://rostov.hh.ru/resume/b4d7a9aaff0ba1a6c80039ed1f656c626b436b"
       <div class="modal-header">
         <h5 class="modal-title">Сообщение</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <div class="alert alert-light border rounded-4">
-          Это статический сайт. Кнопка ниже откроет письмо в твоей почте (mailto).
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Тема</label>
-          <input id="mailSubject" class="form-control" placeholder="Например: Вакансия PM/PO" />
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Сообщение</label>
-          <textarea id="mailBody" class="form-control" rows="5" placeholder="Текст..."></textarea>
-        </div>
-
-        <button class="btn btn-primary" type="button" onclick="openMail()">
-          Открыть письмо
-        </button>
       </div>
     </div>
   </div>

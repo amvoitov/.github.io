@@ -4,7 +4,7 @@ permalink: /projects/
 ---
 
 <div class="card shadow-sm rounded-4 p-4 p-lg-5 page-card">
-  <h1 class="display-6 fw-bold mb-2">Проекты</h1>
+  <h1 class="display-6 fw-bold mb-2">Кейсы</h1>
   <p class="text-muted mb-4">
     Ниже — кейсы. В каждом: контекст, требования, моя роль, ключевые действия, результат и артефакты.
   </p>
