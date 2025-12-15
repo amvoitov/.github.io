@@ -35,20 +35,16 @@ permalink: /artifacts/case_1/
         <span class="badge text-bg-light border">KPI</span>
       </div>
 
-      <div class="fw-semibold mb-2">North Star и KPI-дерево</div>
+      <div class="fw-semibold mb-2">NSM и KPI-дерево</div>
 
       <p class="text-secondary small mb-3">
-        NSM и KPI-драйверы: качество данных, delivery/reliability, безопасность владения данными, adoption.
+        NSM и драйверы: качество данных, delivery/reliability, безопасность владения данными, adoption.
       </p>
 
       <div class="mt-auto d-flex gap-2">
         <a class="btn btn-primary btn-sm"
            href="{{ '/artifacts/case_1/artifact_2/' | relative_url }}">
           Открыть
-        </a>
-        <a class="btn btn-outline-secondary btn-sm"
-           href="{{ '/projects/case_1/' | relative_url }}">
-          К кейсу
         </a>
       </div>
     </div>
