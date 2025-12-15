@@ -10,29 +10,56 @@ permalink: /artifacts/case_1/
 </p>
 
 <div class="row g-3">
-
-  <div class="col-12 col-lg-6">
+  <!-- Artifact 1 -->
+  <div class="col-12 col-md-6 col-xl-4">
     <div class="card shadow-sm h-100">
       <div class="card-body">
-        <h3 class="h6 mb-2">Артефакт 1 — (название)</h3>
-        <p class="text-muted mb-3">Короткое описание: что это и что демонстрирует.</p>
+        <div class="d-flex align-items-start justify-content-between gap-2">
+          <h2 class="h6 mb-1">Артефакт 1 — Требования</h2>
+          <span class="badge text-bg-light border">Текст</span>
+        </div>
+        <p class="text-muted mb-3">
+          Требования end-to-end: функциональные/нефункциональные, роли, сценарии, ограничения.
+        </p>
         <a class="btn btn-primary btn-sm" href="{{ '/artifacts/case_1/artifact_1/' | relative_url }}">Открыть</a>
       </div>
     </div>
   </div>
 
-  <div class="col-12 col-lg-6">
+  <!-- Artifact 2 -->
+  <div class="col-12 col-md-6 col-xl-4">
     <div class="card shadow-sm h-100">
       <div class="card-body">
-        <h3 class="h6 mb-2">Артефакт 2 — (название)</h3>
-        <p class="text-muted mb-3">Короткое описание: что это и что демонстрирует.</p>
-        <a class="btn btn-primary btn-sm" href="{{ '/artifacts/case_1/artifact_2/' | relative_url }}">Открыть</a>
+        <div class="d-flex align-items-start justify-content-between gap-2">
+          <h2 class="h6 mb-1">Артефакт 2 — (название)</h2>
+          <span class="badge text-bg-light border">Текст/картинки</span>
+        </div>
+        <p class="text-muted mb-3">
+          Коротко: что это и что демонстрирует.
+        </p>
+        <a class="btn btn-outline-primary btn-sm" href="{{ '/artifacts/case_1/artifact_2/' | relative_url }}">Открыть</a>
       </div>
     </div>
   </div>
 
+  <!-- Artifact 3 -->
+  <div class="col-12 col-md-6 col-xl-4">
+    <div class="card shadow-sm h-100">
+      <div class="card-body">
+        <div class="d-flex align-items-start justify-content-between gap-2">
+          <h2 class="h6 mb-1">Артефакт 3 — (название)</h2>
+          <span class="badge text-bg-light border">Картинки</span>
+        </div>
+        <p class="text-muted mb-3">
+          Коротко: что это и что демонстрирует.
+        </p>
+        <a class="btn btn-outline-primary btn-sm" href="{{ '/artifacts/case_1/artifact_3/' | relative_url }}">Открыть</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="mt-4">
+<div class="d-flex gap-2 flex-wrap mt-4">
+  <a class="btn btn-outline-secondary btn-sm" href="{{ '/projects/' | relative_url }}">← К кейсам</a>
   <a class="btn btn-outline-secondary btn-sm" href="{{ '/projects/case_1/' | relative_url }}">← Назад к кейсу</a>
 </div>

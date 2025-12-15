@@ -1,88 +1,83 @@
 ---
 title: "Контакты"
 permalink: /contact/
-
 email: "andr@vojtov.ru"
-telegram: "@byrnison12"
-telegram_url: "https://t.me/byrnison12"
-
+telegram: "byrnison12"
 phone: "+7 (993) 448-69-80"
-phone_tel: "+79934486980"
-
-hh_url: "ВСТАВЬ_ССЫЛКУ_НА_HH"
+hh: "ВСТАВЬ_ССЫЛКУ_НА_HH"
 ---
 
 # Контакты
 
-<div class="row g-3">
-  <div class="col-12 col-lg-6">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Связаться</h5>
+<div class="row g-3 mt-1">
+  <div class="col-12 col-lg-7">
+    <div class="card shadow-sm h-100 rounded-4">
+      <div class="card-body p-4">
+        <div class="fw-semibold mb-2">Связаться</div>
 
         <div class="mb-2"><b>Email:</b> <a href="mailto:{{ page.email }}">{{ page.email }}</a></div>
-        <div class="mb-2"><b>Telegram:</b> <a href="{{ page.telegram_url }}" target="_blank" rel="noopener">{{ page.telegram }}</a></div>
-        <div class="mb-2"><b>Телефон:</b> <a href="tel:{{ page.phone_tel }}">{{ page.phone }}</a></div>
+        <div class="mb-2"><b>Telegram:</b> <a href="https://t.me/{{ page.telegram }}">@{{ page.telegram }}</a></div>
+        <div class="mb-3"><b>Телефон:</b> <a href="tel:{{ page.phone | replace:' ', '' }}">{{ page.phone }}</a></div>
 
-        <button class="btn btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#msgModal">
           Написать сообщение
         </button>
       </div>
     </div>
   </div>
 
-  <div class="col-12 col-lg-6">
-    <div class="card h-100 shadow-sm">
-      <div class="card-body">
-        <h5 class="card-title mb-3">Профили</h5>
-        <div class="mb-2"><b>HH:</b> <a href="{{ page.hh_url }}" target="_blank" rel="noopener">Резюме</a></div>
+  <div class="col-12 col-lg-5">
+    <div class="card shadow-sm h-100 rounded-4">
+      <div class="card-body p-4">
+        <div class="fw-semibold mb-2">Профили</div>
+        <div class="mb-2"><b>HH:</b> <a href="{{ page.hh }}">Резюме</a></div>
+
+        <div class="text-muted small mt-3">
+          Форма ниже не отправляет данные на сервер (GitHub Pages — статичный хостинг).
+          Кнопка откроет письмо в почтовом клиенте.
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="msgModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
+    <div class="modal-content rounded-4">
       <div class="modal-header">
         <h5 class="modal-title">Сообщение</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
-        <div class="alert alert-light border mb-3">
-          Это статический сайт. Кнопка откроет письмо в вашем почтовом клиенте (Email/Telegram).
+        <div class="alert alert-light border rounded-4">
+          Это статический сайт. Кнопка ниже откроет письмо в твоей почте (mailto).
         </div>
 
         <div class="mb-3">
           <label class="form-label">Тема</label>
-          <input id="mailSubject" class="form-control" placeholder="Например: Вакансия PM/PO">
+          <input id="mailSubject" class="form-control" placeholder="Например: Вакансия PM/PO" />
         </div>
 
         <div class="mb-3">
           <label class="form-label">Сообщение</label>
           <textarea id="mailBody" class="form-control" rows="5" placeholder="Текст..."></textarea>
         </div>
-      </div>
 
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" id="openMailBtn">Открыть письмо</button>
+        <button class="btn btn-primary" type="button" onclick="openMail()">
+          Открыть письмо
+        </button>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('openMailBtn');
-  if (!btn) return;
-
-  btn.addEventListener('click', () => {
-    const subject = encodeURIComponent(document.getElementById('mailSubject')?.value || 'Вакансия PM/PO');
-    const body = encodeURIComponent(document.getElementById('mailBody')?.value || '');
-    const to = "{{ page.email }}";
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-  });
-});
+function openMail(){
+  const to = "{{ page.email }}";
+  const s = encodeURIComponent(document.getElementById('mailSubject').value || 'Сообщение с сайта');
+  const b = encodeURIComponent(document.getElementById('mailBody').value || '');
+  window.location.href = `mailto:${to}?subject=${s}&body=${b}`;
+}
 </script>

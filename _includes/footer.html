@@ -1,18 +1,31 @@
-{% assign contact_page = site.pages | where: "permalink", "/contact/" | first %}
-{% assign c = contact_page.contacts %}
+{% assign contact = site.pages | where_exp: "p", "p.url == '/contact/'" | first %}
 
-<div class="small text-muted">
-  © {{ site.title }}
-  {% if c %}
-    · <a href="mailto:{{ c.email }}">{{ c.email }}</a>
-    {% if c.telegram_url and c.telegram %}
-      · <a href="{{ c.telegram_url }}" target="_blank" rel="noopener">{{ c.telegram }}</a>
-    {% endif %}
-    {% if c.hh_url %}
-      · <a href="{{ c.hh_url }}" target="_blank" rel="noopener">HH</a>
-    {% endif %}
-    {% if c.phone_url and c.phone %}
-      · <a href="{{ c.phone_url }}">{{ c.phone }}</a>
-    {% endif %}
-  {% endif %}
-</div>
+<footer class="py-4">
+  <div class="container">
+    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start text-muted small">
+      <span>© {{ site.title }}</span>
+
+      {% if contact and contact.email %}
+        <a class="link-primary text-decoration-none" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+      {% endif %}
+
+      {% if contact and contact.telegram %}
+        <a class="link-primary text-decoration-none" href="https://t.me/{{ contact.telegram }}">@{{ contact.telegram }}</a>
+      {% endif %}
+
+      {% if contact and contact.hh %}
+        <a class="link-primary text-decoration-none" href="{{ contact.hh }}">HH</a>
+      {% endif %}
+
+      {% if contact and contact.phone %}
+        <a class="link-primary text-decoration-none" href="tel:{{ contact.phone | replace: ' ', '' }}">
+          {{ contact.phone }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
+<script src="{{ '/assets/vendor/bootstrap_5_3_8/js/bootstrap.bundle.min.js' | relative_url }}"></script>
+
+
+</footer>
