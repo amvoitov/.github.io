@@ -18,7 +18,7 @@ hh_url: "https://rostov.hh.ru/resume/b4d7a9aaff0ba1a6c80039ed1f656c626b436b"
         <div class="fw-semibold mb-2">Связаться</div>
 
         <div class="mb-2"><b>Email:</b> <a href="mailto:{{ page.email }}">{{ page.email }}</a></div>
-        <div class="mb-2"><b>Telegram:</b> <a href="https://t.me/{{ page.telegram }}">@{{ page.telegram }}</a></div>
+        <div class="mb-2"><b>Telegram:</b> <a href="https://t.me/{{ page.telegram }}">{{ page.telegram }}</a></div>
         <div class="mb-3"><b>Телефон:</b> <a href="tel:{{ page.phone | replace:' ', '' }}">{{ page.phone }}</a></div>
       </div>
     </div>
