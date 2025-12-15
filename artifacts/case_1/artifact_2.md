@@ -123,10 +123,6 @@ permalink: /artifacts/case_1/artifact_2/
           </div>
 
         </div>
-
-        <div class="mt-3 small text-secondary">
-          Примечание: формулировки KPI сохранены как в исходном тексте артефакта.
-        </div>
       </div>
     </div>
   </div>
