@@ -131,6 +131,7 @@ case_artifacts_href: "#artifacts"
 - Продажи бункеров перегрузчиков: +20%
 
 ## Артефакты
-<div id="artifacts"></div>
+<div id="artifacts">
+    case_artifacts_href: /artifacts/case_1/
+</div>
 
-- (добавим список: ТЗ/схемы/протоколы/скриншоты/видео/акты — то, что можешь показать)
